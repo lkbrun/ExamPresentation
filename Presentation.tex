@@ -1,0 +1,257 @@
+\documentclass[12pt,norsk]{beamer}
+
+\usepackage[norsk]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\usetheme{Luebeck}
+\usecolortheme{dolphin}
+
+\graphicspath{ {images/} }
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Examination Presentation]{Examination Presentation}
+% \subtitle{Chapter 6.1 - 6.2}
+
+\author{Lasse K. Brun \& Håvard R. Olsen \\* (Group 5)} % Your name
+\institute[UiB]
+{
+\medskip
+\textit{lkbrun@gmail.com \& haavard.olsen@live.com} \\* % Your email address
+\textit{INF226 - Software Security, Fall 2014 }
+}
+\date{1. December 2014} % Date, can be changed to a custom date
+
+
+
+\begin{document}
+
+ 
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\section{Proposal}
+
+
+% Code base
+% Tools ( ZAP & FOR )
+% What did we find?
+% Recommendations
+% Our experience 
+% What did we learn?
+
+
+
+\begin{frame}
+	\frametitle{OWASP Zed Attack Proxy}
+	
+	\begin{block}{What is it?}
+	
+		\begin{itemize}
+			\item Penetration testing tool for web applications
+			\item Easy to install
+			\item Features:
+		
+			\begin{itemize}
+				\item Intercepting Proxy
+				\item Spider
+				\item Passive/Active Scanner
+			\end{itemize}
+		
+		\end{itemize}
+	
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{OWASP Zed Attack Proxy}
+	
+	\begin{block}{Our approach}
+	
+		\begin{itemize}
+			\item Manual testing using the Passive scanner
+			\item Running the Spider to locate all resources
+			\item Running the Active scanner to thoroughly test codebase
+		\end{itemize}	
+	
+	\end{block}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{OWASP Zed Attack Proxy}
+	
+	
+	\begin{block}{What we found!}
+		
+		\begin{itemize}
+			\item Many Low-Medium alerts
+			\item Alerts worth noting:
+			
+			\begin{itemize}
+				\item Wrong use of session management
+				\item Multiple Cross-site scripting vulnerabilities			
+			\end{itemize}
+		
+		\end{itemize}
+
+	\end{block}
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{OWASP Zed Attack Proxy}
+	
+	\begin{block}{Our experience}
+	
+		\begin{itemize}
+			\item Easy to get started and use on a basic level, but requires expertise and training to use advanced featured
+			\item Large percentage of false positives and/or duplicate alerts
+		\end{itemize}
+	
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{HP Fortify}
+	
+	\begin{block}{What is it?}
+	
+		\begin{itemize}
+			\item Assess, assure and protect enterprise software applications.
+			\item Security testing and management through static and dynamic testing technologies. 
+			\item Integrate security quickly and scale in response to business change while protecting assets.
+			\item Important part of securing software.
+		 
+		\end{itemize}				
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{HP Fortify}
+	
+	\begin{block}{Installation}
+	
+		\begin{itemize}
+			\item Download and run installation wizard.
+			\item In Eclipse - install new feature.
+			\item Highly configurable.
+			\item Finalize installation with restart of Eclipse.
+		 
+		\end{itemize}				
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{HP Fortify}
+	
+	\begin{block}{What did we find?}
+	
+		\begin{itemize}
+		\item Scanning entire code base revealed over thousands vulnerabilities.
+		\item Focus narrowed in order to provide a more comprehensive and complete analysis.
+		\item dhis-web-mobile.
+		\item PICTURE
+		\item Lots of false positives and duplicates.
+		\item Variety of issues further analysed.
+		\end{itemize}				
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{HP Fortify}
+	
+	\begin{block}{Our Experience}
+	
+		\begin{itemize}
+		\item Easy to install.
+		\item Lots of documentation and user manuals.
+		\item Distinguish the false positives.
+		\item Quite time consuming.
+		\end{itemize}				
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{DHIS 2}
+
+	\begin{itemize}
+		\item test
+	\end{itemize}		
+
+\end{frame}
+
+\section{Analysis Report}
+
+\begin{frame}
+	
+	\frametitle{Experience}
+
+	\begin{itemize}
+		\item test
+	\end{itemize}		
+
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{What we found}
+
+	\begin{itemize}
+		\item test
+	\end{itemize}		
+
+\end{frame}
+
+\section{Analysis, Evaluation and Recommendation}
+\begin{frame}
+
+	\frametitle{Recommendations}
+		
+	\begin{itemize}
+		\item Test
+	\end{itemize}
+	
+	\begin{figure}[h]
+    	\centering
+    	\includegraphics[scale=0.45]{images/questionmark.png}
+    
+	\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+	\frametitle{References}
+		
+	\bibliographystyle{plain}
+	\bibliography{biblio}	
+
+\end{frame}
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
